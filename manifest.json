@@ -11,6 +11,14 @@
             "48": "nft.png",
             "128": "nft.png"
         }
-    }
-    
+    },
+    "content_scripts": [
+        {
+           "matches": [
+               "<all_urls>"
+            ],
+            "js": ["scripts/content.js"],
+            "run_at": "document_end"
+        }
+    ]
 }
